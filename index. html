@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VIP Application - 2027 One Of A Kind Spring Market</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            color: #111;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .banner {
+            background-color: #4a2853;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        .banner-title {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .banner-subtitle {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            margin-top: 5px;
+        }
+
+        .banner-date {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        h1.form-main-heading {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .sub-categories {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .event-sub-info {
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        h3.section-subtitle {
+            text-align: center;
+            font-weight: normal;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        h2.section-heading {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        h3.form-section-title {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .guide-box {
+            text-align: center;
+            background: #fdfbf7;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .guide-box img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 2px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4a2853;
+        }
+
+        .field-helper {
+            font-size: 11px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .file-upload-box {
+            border: 2px dashed #aaa;
+            background: #f9f9f9;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .file-upload-box:hover {
+            border-color: #666;
+        }
+
+        .file-upload-box span {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        .pricing-section-title {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #4a2853;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            text-align: center;
+            background: #f4f4f6;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        .pricing-table th {
+            background-color: #e9e9ed;
+            font-weight: bold;
+        }
+
+        .pricing-notes {
+            font-size: 11px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .rising-stars-box {
+            background: #f4f4f6;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0 20px 0;
+            font-size: 13px;
+        }
+
+        .rising-stars-box ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+
+        .rising-stars-box li {
+            margin-bottom: 4px;
+        }
+
+        .signature-container {
+            border: 1px solid #999;
+            background: #fff;
+            position: relative;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+
+        canvas#signature-pad {
+            display: block;
+            width: 100%;
+            height: 150px;
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .signature-line {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            right: 20px;
+            border-bottom: 1px solid #333;
+            pointer-events: none;
+        }
+
+        .signature-clear {
+            text-align: right;
+            font-size: 11px;
+            color: #555;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .signature-clear:hover {
+            color: #000;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-save {
+            background: #666;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .btn-submit {
+            background: #d9822b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+        }
+
+        .btn-submit:disabled {
+            background: #999;
+            cursor: not-allowed;
+        }
+
+        .status-message {
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+            display: none;
+        }
+
+        .formstack-footer {
+            text-align: center;
+            font-size: 11px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .upload-success {
+            color: #16803c;
+        }
+
+        .upload-warning {
+            color: #b26a00;
+        }
+
+        @media (max-width: 650px) {
+
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .container {
+                padding: 25px 15px;
+            }
+
+            .banner-title {
+                font-size: 23px;
+            }
+
+            .banner-subtitle {
+                font-size: 19px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="banner">
+
+    <div style="font-size:12px;letter-spacing:1px;margin-bottom:5px;text-transform:uppercase;">
+        by informa-
+    </div>
+
+    <div class="banner-title">
+        One Of A Kind
+    </div>
+
+    <div class="banner-subtitle">
+        Spring Market 2027
+    </div>
+
+    <div class="banner-date">
+        April 1-4 | Enercare Centre, Exhibition Place
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <h1 class="form-main-heading">
+        VIP Application
+    </h1>
+
+    <div class="sub-categories">
+        Main/No Section, Flavours, Farmers Market, Zero-Proof, Rising Stars, &amp; Marketplace
+    </div>
+
+    <div class="event-sub-info">
+
+        <strong>
+            2027 ONE OF A KIND Spring Market | April 1-4, 2027
+        </strong>
+
+        <br>
+
+        Enercare Centre, Exhibition Place
+
+    </div>
+
+
+    <div class="guide-box">
+
+        <h3 class="section-subtitle" style="margin-top:0;">
+            Unsure which application to submit? Use this guide below:
+        </h3>
+
+        <h2 class="section-heading">
+            Which Application Should You Submit?
+        </h2>
+
+        <img
+            src="flowchart-diagram.png"
+            alt="Which Application Should You Submit Flowchart"
+        >
+
+    </div>
+
+
+    <h3 style="text-align:center;color:#111;font-size:18px;margin-bottom:25px;">
+        NEXT ROUND APPLICATION DEADLINE: SEPTEMBER 30, 2026
+    </h3>
+
+
+    <div style="text-align:center;margin-bottom:30px;">
+
+        <h3 style="margin-bottom:5px;">
+            SOUND GOOD?
+        </h3>
+
+        <p style="margin-top:0;font-size:14px;">
+
+            Then let's get started, and don't hesitate to
+
+            <a href="#" style="color:#0066cc;">
+                reach out
+            </a>
+
+            if you have any questions!
+
+        </p>
+
+        <hr style="border:0;border-top:1px solid #ddd;margin-top:20px;">
+
+    </div>
+
+
+    <!-- =====================================================
+         FORM
+         ===================================================== -->
+
+    <form id="ooak-application-form">
+
+        <!-- CONTACT DETAILS -->
+
+        <h3 class="form-section-title">
+            Contact Details
+        </h3>
+
+        <p style="font-size:12px;color:#555;text-align:center;margin-bottom:20px;">
+
+            Please double-check your spelling and details. The information you provide here will be used for your contract and communications if you're accepted to the show.
+
+        </p>
+
+
+        <label>Your Name*</label>
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="firstName"
+                    required
+                >
+
+                <div class="field-helper">
+                    First Name
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="lastName"
+                    required
+                >
+
+                <div class="field-helper">
+                    Last Name
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Email*
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number*
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    required
+                >
+
+                <div class="field-helper">
+                    Please include area code
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Please confirm your email address:*
+            </label>
+
+            <input
+                type="email"
+                id="confirmEmail"
+                required
+                style="width:50%;"
+            >
+
+        </div>
+
+
+        <!-- COMPANY DETAILS -->
+
+        <h3 class="form-section-title">
+            Company Details
+        </h3>
+
+        <p style="font-size:12px;color:#555;text-align:center;margin-bottom:20px;">
+
+            Please double-check your spelling and details. The information you provide here will be used for your contract, invoice, or official document.
+
+        </p>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Company Name*
+                </label>
+
+                <input
+                    type="text"
+                    id="companyName"
+                    required
+                >
+
+                <div class="field-helper">
+                    This is the name you would need used for your company on any contract, invoice, or official document.
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Exhibiting Name*
+                </label>
+
+                <input
+                    type="text"
+                    id="exhibitingName"
+                    required
+                >
+
+                <div class="field-helper">
+                    This is the name you would like to have your company presented to visitors as.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Website
+                </label>
+
+                <input
+                    type="text"
+                    id="website"
+                    placeholder="www.oneofakindshow.com"
+                >
+
+                <div class="field-helper">
+                    Please enter the complete URL, beginning with www.
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Instagram, Facebook, or TikTok
+                </label>
+
+                <input
+                    type="text"
+                    id="socialMedia"
+                    placeholder="www.instagram.com/oak_toronto"
+                >
+
+                <div class="field-helper">
+                    Please enter the complete URL.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Are you a member of Ontario Made?*
+            </label>
+
+            <div style="margin-top:5px;font-size:14px;">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="ontario_made"
+                        value="Yes"
+                        required
+                    >
+                    Yes
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="ontario_made"
+                        value="No"
+                    >
+                    No
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="ontario_made"
+                        value="N/A"
+                    >
+                    N/A (not from Ontario)
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Product category (from previous OOAK show)*
+                </label>
+
+                <select
+                    id="productCategory"
+                    required
+                >
+
+                    <option value="">
+                        Please Select
+                    </option>
+
+                    <option>Accessories</option>
+                    <option>Apparel</option>
+                    <option>Art</option>
+                    <option>Baby + Kids</option>
+                    <option>Books</option>
+                    <option>Candles</option>
+                    <option>Ceramics</option>
+                    <option>Design + Illustration</option>
+                    <option>Fashion Jewellery</option>
+                    <option>Fine Jewellery</option>
+                    <option>Flavours</option>
+                    <option>Flavours - Zero-Proof</option>
+                    <option>Flavours - Farmers Market</option>
+                    <option>Furniture</option>
+                    <option>Games/Recreation</option>
+                    <option>Glass</option>
+                    <option>Hats</option>
+                    <option>Home</option>
+                    <option>Leather</option>
+                    <option>Metal</option>
+                    <option>Music</option>
+                    <option>Personal Care</option>
+                    <option>Pets</option>
+                    <option>Plants</option>
+                    <option>Sculpture</option>
+                    <option>Stained Glass</option>
+                    <option>Stationery</option>
+                    <option>Textiles</option>
+                    <option>Upcycled</option>
+                    <option>Wood</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    What Year did you Begin Exhibiting at OOAK?*
+                </label>
+
+                <input
+                    type="text"
+                    id="startYear"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- BILLING -->
+
+        <h3 class="form-section-title">
+            Billing Address
+        </h3>
+
+
+        <div class="form-group">
+
+            <label>
+                Billing Address*
+            </label>
+
+            <input
+                type="text"
+                id="billingAddress"
+                placeholder="Address Line 1"
+                required
+                style="margin-bottom:8px;"
+            >
+
+            <input
+                type="text"
+                id="billingAddress2"
+                placeholder="Address Line 2"
+            >
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="City"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="province"
+                    placeholder="Province"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="postalCode"
+                    placeholder="Postal Code"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOTH SELECTION -->
+
+        <h3 class="form-section-title">
+            Booth Selection
+        </h3>
+
+
+        <p style="font-size:13px;text-align:center;">
+
+            <strong>
+                2027 One Of A Kind Spring Market Pricing &amp; Sections
+            </strong>
+
+        </p>
+
+
+        <p style="font-size:12px;color:#444;line-height:1.5;">
+
+            Booth space includes 8' high pipe and drape and booth number signage.
+            Exhibitors <strong>must</strong> provide lighting, signage and POS equipment.
+            Electrical, hard walls and other services are available for rental.
+
+        </p>
+
+
+        <div class="pricing-section-title">
+            Main Section &amp; Flavours Section
+        </div>
+
+
+        <table class="pricing-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        BOOTH QUANTITY
+                    </th>
+
+                    <th>
+                        5x10 BOOTHS
+                        <br>
+                        <span style="font-weight:normal;font-size:11px;">
+                            PRICE PER BOOTH
+                        </span>
+                    </th>
+
+                    <th>
+                        10x10 BOOTHS
+                        <br>
+                        <span style="font-weight:normal;font-size:11px;">
+                            PRICE PER BOOTH
+                        </span>
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td><strong>1 BOOTH</strong></td>
+                    <td>$2,350.00</td>
+                    <td>$2,993.75</td>
+                </tr>
+
+                <tr>
+                    <td><strong>2 BOOTHS</strong></td>
+                    <td>$1,962.50</td>
+                    <td>$2,415.00</td>
+                </tr>
+
+                <tr>
+                    <td><strong>3+ BOOTHS</strong></td>
+                    <td>$1,581.25</td>
+                    <td>$2,025.00</td>
+                </tr>
+
+                <tr>
+                    <td><strong>CORNER, ADD</strong></td>
+                    <td>$350.00</td>
+                    <td>$350.00</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <div class="pricing-notes">
+
+            *Actual booth dimensions are 4' 8" x 9' 8" for a 5' booth and
+            9' 8" x 9' 8" for a 10' booth.
+
+            <br>
+
+            *Prices do not include HST.
+
+        </div>
+
+
+        <div class="pricing-section-title">
+            Rising Stars ($100 per SQFT)
+        </div>
+
+
+        <div class="rising-stars-box">
+
+            <ul>
+
+                <li>
+                    Open-concept section for makers with under five years of professional experience in their craft.
+                </li>
+
+                <li>
+                    Open to first-time exhibitors, S26 Marketplace exhibitors, and W26 Rising Stars.
+                </li>
+
+                <li>
+                    Minimum booth size is 9 square feet (3' x 3').
+                </li>
+
+                <li>
+                    Price does not include HST.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="pricing-section-title">
+            Zero-Proof
+        </div>
+
+
+        <table class="pricing-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        BOOTH TYPE / OPTION
+                    </th>
+
+                    <th>
+                        PRICE
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td><strong>5x10 BOOTH</strong></td>
+                    <td>$2,350.00</td>
+                </tr>
+
+                <tr>
+                    <td><strong>5x20 BOOTH</strong></td>
+                    <td>$3,925.00</td>
+                </tr>
+
+                <tr>
+                    <td><strong>5x30 BOOTH</strong></td>
+                    <td>$4,743.75</td>
+                </tr>
+
+                <tr>
+                    <td><strong>CORNER, ADD</strong></td>
+                    <td>$350.00</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <div class="pricing-notes">
+
+            *Actual booth dimensions are 4' 8" x 9' 8".
+
+            <br>
+
+            *Prices do not include HST.
+
+        </div>
+
+
+        <!-- BOOTH PREFERENCES -->
+
+        <div class="form-group" style="margin-top:30px;">
+
+            <p style="font-size:14px;margin-bottom:15px;">
+                Please select your booth preferences below:
+            </p>
+
+
+            <label style="font-weight:bold;">
+                1st Choice Section*
+            </label>
+
+            <div style="display:flex;gap:20px;margin-bottom:20px;font-size:14px;flex-wrap:wrap;">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_1"
+                        value="Main Section/None"
+                        required
+                    >
+                    Main Section/None
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_1"
+                        value="Flavours"
+                    >
+                    Flavours
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_1"
+                        value="Flavours - Zero-Proof"
+                    >
+                    Flavours - Zero-Proof
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_1"
+                        value="Rising Stars"
+                    >
+                    Rising Stars
+                </label>
+
+            </div>
+
+
+            <label style="font-weight:bold;">
+                2nd Choice Section*
+            </label>
+
+            <div style="display:flex;gap:20px;margin-bottom:20px;font-size:14px;flex-wrap:wrap;">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_2"
+                        value="Main Section/None"
+                        required
+                    >
+                    Main Section/None
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_2"
+                        value="Flavours"
+                    >
+                    Flavours
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_2"
+                        value="Flavours - Zero-Proof"
+                    >
+                    Flavours - Zero-Proof
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_2"
+                        value="Rising Stars"
+                    >
+                    Rising Stars
+                </label>
+
+            </div>
+
+
+            <label style="font-weight:bold;">
+                3rd Choice Section*
+            </label>
+
+            <div style="display:flex;gap:20px;margin-bottom:20px;font-size:14px;flex-wrap:wrap;">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_3"
+                        value="Main Section/None"
+                        required
+                    >
+                    Main Section/None
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_3"
+                        value="Flavours"
+                    >
+                    Flavours
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_3"
+                        value="Flavours - Zero-Proof"
+                    >
+                    Flavours - Zero-Proof
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="choice_3"
+                        value="Rising Stars"
+                    >
+                    Rising Stars
+                </label>
+
+            </div>
+
+
+            <label style="font-weight:bold;">
+                If my booth choices are unavailable, I would like to:*
+            </label>
+
+
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;margin-bottom:5px;">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="unavailable_action"
+                        value="Be matched with the next closest available option."
+                        required
+                    >
+                    Be matched with the next closest available option.
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="unavailable_action"
+                        value="Be placed on the wait list until my booth choices become available."
+                    >
+                    Be placed on the wait list until my booth choices become available.
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADDITIONAL INFORMATION -->
+
+        <h3 class="form-section-title">
+            Additional Information
+        </h3>
+
+
+        <div class="form-group">
+
+            <label>
+                Booth Display:*
+            </label>
+
+
+            <input
+                type="file"
+                id="booth-file-input"
+                style="display:none;"
+                accept=".jpg,.jpeg,.gif,.png,.bmp,.tif,.tiff,.psd,.pdf,.doc,.docx"
+            >
+
+
+            <div
+                class="file-upload-box"
+                id="file-drop-zone"
+            >
+
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#666"
+                    stroke-width="2"
+                    style="margin-bottom:5px;"
+                >
+
+                    <path
+                        d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                    ></path>
+
+                    <polyline points="17 8 12 3 7 8"></polyline>
+
+                    <line
+                        x1="12"
+                        y1="3"
+                        x2="12"
+                        y2="15"
+                    ></line>
+
+                </svg>
+
+                <br>
+
+                Drag and drop here or
+
+                <span id="browse-link">
+                    Browse files
+                </span>
+
+
+                <div
+                    id="file-name-display"
+                    style="font-size:12px;color:#333;margin-top:6px;font-weight:bold;"
+                ></div>
+
+
+                <div style="font-size:11px;color:#888;margin-top:4px;">
+                    Max file size: 15 MB
+                </div>
+
+            </div>
+
+
+            <div class="field-helper">
+
+                Please upload a booth design image/sketch of your proposed space.
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Accessibility Requests
+            </label>
+
+            <input
+                type="text"
+                id="accessibility"
+                placeholder="(Allergies, health concerns, etc.)"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;">
+
+                <input
+                    type="checkbox"
+                    id="contactPermission"
+                    checked
+                    required
+                    style="margin-top:3px;"
+                >
+
+                <span>
+
+                    <strong>*MANDATORY:</strong>
+
+                    I agree to allow the One Of A Kind Show to contact me by email regarding information as it pertains to the event which may include contracting, general exhibiting information, and event newsletter.
+
+                </span>
+
+            </label>
+
+        </div>
+
+
+        <!-- TERMS -->
+
+        <h3 class="form-section-title">
+            Terms &amp; Conditions
+        </h3>
+
+
+        <div
+            style="font-size:11px;color:#444;max-height:150px;overflow-y:scroll;border:1px solid #ccc;padding:10px;margin-bottom:15px;background:#fafafa;"
+        >
+
+            <p>
+                <strong>
+                    Placement of Space(s) is at Show Management's sole and absolute discretion.
+                </strong>
+            </p>
+
+            <p>
+                I understand that this is only an application form and doesn't guarantee exhibit space until a confirmation of acceptance is received.
+            </p>
+
+            <p>
+                Once approved, all payments are non-refundable and non-transferable.
+            </p>
+
+            <p>
+                For purposes of this Agreement, Informa Canada, Inc. is "Informa" as defined in the Agreement.
+            </p>
+
+        </div>
+
+
+        <!-- SIGNATURE -->
+
+        <div class="form-group">
+
+            <label>
+                Signature*
+            </label>
+
+
+            <div class="signature-container">
+
+                <canvas id="signature-pad"></canvas>
+
+                <div class="signature-line"></div>
+
+            </div>
+
+
+            <div
+                class="signature-clear"
+                id="clear-signature"
+            >
+                clear
+            </div>
+
+
+            <div class="field-helper">
+                Use your mouse or finger to draw your signature above
+            </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <div class="submit-container">
+
+            <button
+                type="button"
+                class="btn-save"
+                id="save-later-btn"
+            >
+                Save and Resume Later
+            </button>
+
+
+            <button
+                type="submit"
+                class="btn-submit"
+                id="submit-btn"
+            >
+                Submit Now
+            </button>
+
+
+            <div
+                id="status-message"
+                class="status-message"
+            ></div>
+
+
+            <div class="formstack-footer">
+                Form secured by <strong>Formstack</strong>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+
+
+<!-- =========================================================
+     FIREBASE
+     EVERYTHING IS EMBEDDED HERE
+     NO firebase.js FILE IS REQUIRED
+     ========================================================= -->
+
+<script type="module">
+
+    /* ========================================================
+       FIREBASE IMPORTS
+       ======================================================== */
+
+    import {
+        initializeApp
+    } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+
+
+    import {
+        getDatabase,
+        ref,
+        push,
+        set,
+        update
+    } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+
+    import {
+        getStorage,
+        ref as storageRef,
+        uploadBytes,
+        getDownloadURL
+    } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
+
+
+    /* ========================================================
+       FIREBASE CONFIG
+       ======================================================== */
+
+    const firebaseConfig = {
+
+        apiKey: "AIzaSyDtyALfdSivLzw5rpiD70InIct-ZawcMU",
+
+        authDomain:
+            "ooaks-5d887.firebaseapp.com",
+
+        projectId:
+            "ooaks-5d887",
+
+        storageBucket:
+            "ooaks-5d887.firebasestorage.app",
+
+        messagingSenderId:
+            "76992379291",
+
+        appId:
+            "1:76992379291:web:5694e67da538556b76493e",
+
+        measurementId:
+            "G-6B8GKDTW01",
+
+        databaseURL:
+            "https://ooaks-5d887-default-rtdb.firebaseio.com"
+
+    };
+
+
+    /* ========================================================
+       INITIALIZE
+       ======================================================== */
+
+    const app =
+        initializeApp(firebaseConfig);
+
+
+    const database =
+        getDatabase(app);
+
+
+    const storage =
+        getStorage(app);
+
+
+    console.log(
+        "Firebase initialized successfully."
+    );
+
+
+    /* ========================================================
+       FORM ELEMENTS
+       ======================================================== */
+
+    const form =
+        document.getElementById(
+            "ooak-application-form"
+        );
+
+
+    const submitBtn =
+        document.getElementById(
+            "submit-btn"
+        );
+
+
+    const statusMessage =
+        document.getElementById(
+            "status-message"
+        );
+
+
+    const fileInput =
+        document.getElementById(
+            "booth-file-input"
+        );
+
+
+    const dropZone =
+        document.getElementById(
+            "file-drop-zone"
+        );
+
+
+    const browseLink =
+        document.getElementById(
+            "browse-link"
+        );
+
+
+    const fileNameDisplay =
+        document.getElementById(
+            "file-name-display"
+        );
+
+
+    const canvas =
+        document.getElementById(
+            "signature-pad"
+        );
+
+
+    const clearSignature =
+        document.getElementById(
+            "clear-signature"
+        );
+
+
+    let ctx =
+        canvas.getContext("2d");
+
+
+    let signatureDrawn =
+        false;
+
+
+    /* ========================================================
+       STATUS
+       ======================================================== */
+
+    function setStatus(
+        message,
+        isError = false
+    ) {
+
+        statusMessage.style.display =
+            "block";
+
+        statusMessage.textContent =
+            message;
+
+        statusMessage.style.color =
+            isError
+                ? "#b00020"
+                : "#333";
+    }
+
+
+    /* ========================================================
+       TIMEOUT HELPER
+       ======================================================== */
+
+    function withTimeout(
+        promise,
+        milliseconds,
+        errorMessage
+    ) {
+
+        return Promise.race([
+
+            promise,
+
+            new Promise(
+                function(resolve, reject) {
+
+                    setTimeout(
+                        function() {
+
+                            reject(
+                                new Error(
+                                    errorMessage
+                                )
+                            );
+
+                        },
+                        milliseconds
+                    );
+
+                }
+            )
+
+        ]);
+
+    }
+
+
+    /* ========================================================
+       FILE SELECTION
+       ======================================================== */
+
+    dropZone.addEventListener(
+        "click",
+        function() {
+
+            fileInput.click();
+
+        }
+    );
+
+
+    browseLink.addEventListener(
+        "click",
+        function(event) {
+
+            event.preventDefault();
+
+            event.stopPropagation();
+
+            fileInput.click();
+
+        }
+    );
+
+
+    fileInput.addEventListener(
+        "change",
+        function() {
+
+            if (
+                !this.files ||
+                !this.files.length
+            ) {
+
+                return;
+
+            }
+
+
+            const file =
+                this.files[0];
+
+
+            if (
+                file.size >
+                15 * 1024 * 1024
+            ) {
+
+                alert(
+                    "The selected file is larger than 15 MB."
+                );
+
+                this.value = "";
+
+                fileNameDisplay.textContent =
+                    "";
+
+                return;
+
+            }
+
+
+            fileNameDisplay.textContent =
+                "Selected file: " +
+                file.name;
+
+        }
+    );
+
+
+    /* ========================================================
+       DRAG AND DROP
+       ======================================================== */
+
+    dropZone.addEventListener(
+        "dragover",
+        function(event) {
+
+            event.preventDefault();
+
+            dropZone.style.borderColor =
+                "#0066cc";
+
+            dropZone.style.background =
+                "#f0f7ff";
+
+        }
+    );
+
+
+    dropZone.addEventListener(
+        "dragleave",
+        function() {
+
+            dropZone.style.borderColor =
+                "#aaa";
+
+            dropZone.style.background =
+                "#f9f9f9";
+
+        }
+    );
+
+
+    dropZone.addEventListener(
+        "drop",
+        function(event) {
+
+            event.preventDefault();
+
+            dropZone.style.borderColor =
+                "#aaa";
+
+            dropZone.style.background =
+                "#f9f9f9";
+
+
+            const files =
+                event.dataTransfer.files;
+
+
+            if (
+                !files ||
+                !files.length
+            ) {
+
+                return;
+
+            }
+
+
+            const file =
+                files[0];
+
+
+            if (
+                file.size >
+                15 * 1024 * 1024
+            ) {
+
+                alert(
+                    "The selected file is larger than 15 MB."
+                );
+
+                return;
+
+            }
+
+
+            try {
+
+                const dataTransfer =
+                    new DataTransfer();
+
+                dataTransfer.items.add(file);
+
+                fileInput.files =
+                    dataTransfer.files;
+
+            } catch (error) {
+
+                console.error(
+                    "Could not attach dropped file:",
+                    error
+                );
+
+            }
+
+
+            fileNameDisplay.textContent =
+                "Selected file: " +
+                file.name;
+
+        }
+    );
+
+
+    /* ========================================================
+       SIGNATURE PAD
+       ======================================================== */
+
+    function setupCanvas() {
+
+        const rect =
+            canvas.getBoundingClientRect();
+
+
+        const ratio =
+            Math.max(
+                window.devicePixelRatio || 1,
+                1
+            );
+
+
+        canvas.width =
+            Math.floor(
+                rect.width * ratio
+            );
+
+
+        canvas.height =
+            Math.floor(
+                rect.height * ratio
+            );
+
+
+        ctx =
+            canvas.getContext("2d");
+
+
+        ctx.setTransform(
+            ratio,
+            0,
+            0,
+            ratio,
+            0,
+            0
+        );
+
+
+        ctx.lineWidth = 2;
+
+        ctx.lineCap =
+            "round";
+
+        ctx.lineJoin =
+            "round";
+
+        ctx.strokeStyle =
+            "#000000";
+
+    }
+
+
+    setupCanvas();
+
+
+    let drawing = false;
+
+
+    function getPointerPosition(
+        event
+    ) {
+
+        const rect =
+            canvas.getBoundingClientRect();
+
+
+        return {
+
+            x:
+                event.clientX -
+                rect.left,
+
+            y:
+                event.clientY -
+                rect.top
+
+        };
+
+    }
+
+
+    canvas.addEventListener(
+        "pointerdown",
+        function(event) {
+
+            event.preventDefault();
+
+            drawing = true;
+
+            signatureDrawn = true;
+
+            canvas.setPointerCapture(
+                event.pointerId
+            );
+
+
+            const position =
+                getPointerPosition(
+                    event
+                );
+
+
+            ctx.beginPath();
+
+            ctx.moveTo(
+                position.x,
+                position.y
+            );
+
+        }
+    );
+
+
+    canvas.addEventListener(
+        "pointermove",
+        function(event) {
+
+            if (!drawing) {
+                return;
+            }
+
+
+            event.preventDefault();
+
+
+            const position =
+                getPointerPosition(
+                    event
+                );
+
+
+            ctx.lineTo(
+                position.x,
+                position.y
+            );
+
+
+            ctx.stroke();
+
+        }
+    );
+
+
+    canvas.addEventListener(
+        "pointerup",
+        function(event) {
+
+            drawing = false;
+
+            try {
+
+                canvas.releasePointerCapture(
+                    event.pointerId
+                );
+
+            } catch (error) {}
+
+        }
+    );
+
+
+    canvas.addEventListener(
+        "pointercancel",
+        function() {
+
+            drawing = false;
+
+        }
+    );
+
+
+    clearSignature.addEventListener(
+        "click",
+        function() {
+
+            ctx.clearRect(
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+
+            signatureDrawn =
+                false;
+
+        }
+    );
+
+
+    /* ========================================================
+       SIGNATURE BLOB
+       ======================================================== */
+
+    function getSignatureBlob() {
+
+        return new Promise(
+            function(resolve) {
+
+                canvas.toBlob(
+                    function(blob) {
+
+                        resolve(blob);
+
+                    },
+                    "image/png"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ========================================================
+       RADIO VALUE
+       ======================================================== */
+
+    function getRadioValue(
+        name
+    ) {
+
+        const selected =
+            document.querySelector(
+                'input[name="' +
+                name +
+                '"]:checked'
+            );
+
+
+        return selected
+            ? selected.value
+            : "";
+
+    }
+
+
+    /* ========================================================
+       SAVE APPLICATION
+       ======================================================== */
+
+    async function saveApplication(
+        applicationData
+    ) {
+
+        console.log(
+            "Saving application to Realtime Database..."
+        );
+
+
+        const applicationsRef =
+            ref(
+                database,
+                "applications"
+            );
+
+
+        const newApplicationRef =
+            push(
+                applicationsRef
+            );
+
+
+        const applicationId =
+            newApplicationRef.key;
+
+
+        applicationData.applicationId =
+            applicationId;
+
+
+        await withTimeout(
+
+            set(
+                newApplicationRef,
+                applicationData
+            ),
+
+            30000,
+
+            "Saving the application timed out. Please check your Firebase Realtime Database configuration and rules."
+        );
+
+
+        console.log(
+            "Application saved:",
+            applicationId
+        );
+
+
+        return applicationId;
+
+    }
+
+
+    /* ========================================================
+       UPLOAD FILE
+       ======================================================== */
+
+    async function uploadUserFile(
+        file,
+        path
+    ) {
+
+        console.log(
+            "Uploading:",
+            path
+        );
+
+
+        const fileRef =
+            storageRef(
+                storage,
+                path
+            );
+
+
+        await withTimeout(
+
+            uploadBytes(
+                fileRef,
+                file
+            ),
+
+            30000,
+
+            "File upload timed out. Please check Firebase Storage."
+        );
+
+
+        console.log(
+            "File uploaded."
+        );
+
+
+        const downloadURL =
+            await withTimeout(
+
+                getDownloadURL(
+                    fileRef
+                ),
+
+                30000,
+
+                "Getting the uploaded file URL timed out."
+            );
+
+
+        console.log(
+            "Download URL obtained."
+        );
+
+
+        return downloadURL;
+
+    }
+
+
+    /* ========================================================
+       UPDATE APPLICATION
+       ======================================================== */
+
+    async function updateApplication(
+        applicationId,
+        data
+    ) {
+
+        const applicationRef =
+            ref(
+                database,
+                "applications/" +
+                applicationId
+            );
+
+
+        await withTimeout(
+
+            update(
+                applicationRef,
+                data
+            ),
+
+            30000,
+
+            "Updating the application timed out."
+        );
+
+    }
+
+
+    /* ========================================================
+       FORM SUBMISSION
+       ======================================================== */
+
+    form.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            console.log(
+                "========== FORM SUBMISSION STARTED =========="
+            );
+
+
+            /* ------------------------------------------------
+               VALIDATION
+               ------------------------------------------------ */
+
+            if (
+                !form.checkValidity()
+            ) {
+
+                form.reportValidity();
+
+                return;
+
+            }
+
+
+            const email =
+                document
+                    .getElementById(
+                        "email"
+                    )
+                    .value
+                    .trim();
+
+
+            const confirmEmail =
+                document
+                    .getElementById(
+                        "confirmEmail"
+                    )
+                    .value
+                    .trim();
+
+
+            if (
+                email.toLowerCase() !==
+                confirmEmail.toLowerCase()
+            ) {
+
+                alert(
+                    "The email addresses do not match."
+                );
+
+                return;
+
+            }
+
+
+            if (!signatureDrawn) {
+
+                alert(
+                    "Please draw your signature before submitting."
+                );
+
+                return;
+
+            }
+
+
+            /* ------------------------------------------------
+               DISABLE BUTTON
+               ------------------------------------------------ */
+
+            submitBtn.disabled =
+                true;
+
+            submitBtn.textContent =
+                "Submitting...";
+
+
+            try {
+
+                const timestamp =
+                    Date.now();
+
+
+                /* ============================================
+                   COLLECT DATA
+                   ============================================ */
+
+                const applicationData = {
+
+                    firstName:
+                        document
+                            .getElementById(
+                                "firstName"
+                            )
+                            .value
+                            .trim(),
+
+                    lastName:
+                        document
+                            .getElementById(
+                                "lastName"
+                            )
+                            .value
+                            .trim(),
+
+                    email:
+                        email,
+
+                    confirmEmail:
+                        confirmEmail,
+
+                    phone:
+                        document
+                            .getElementById(
+                                "phone"
+                            )
+                            .value
+                            .trim(),
+
+                    companyName:
+                        document
+                            .getElementById(
+                                "companyName"
+                            )
+                            .value
+                            .trim(),
+
+                    exhibitingName:
+                        document
+                            .getElementById(
+                                "exhibitingName"
+                            )
+                            .value
+                            .trim(),
+
+                    website:
+                        document
+                            .getElementById(
+                                "website"
+                            )
+                            .value
+                            .trim(),
+
+                    socialMedia:
+                        document
+                            .getElementById(
+                                "socialMedia"
+                            )
+                            .value
+                            .trim(),
+
+                    ontarioMade:
+                        getRadioValue(
+                            "ontario_made"
+                        ),
+
+                    productCategory:
+                        document
+                            .getElementById(
+                                "productCategory"
+                            )
+                            .value,
+
+                    startYear:
+                        document
+                            .getElementById(
+                                "startYear"
+                            )
+                            .value
+                            .trim(),
+
+                    billingAddress:
+                        document
+                            .getElementById(
+                                "billingAddress"
+                            )
+                            .value
+                            .trim(),
+
+                    billingAddress2:
+                        document
+                            .getElementById(
+                                "billingAddress2"
+                            )
+                            .value
+                            .trim(),
+
+                    city:
+                        document
+                            .getElementById(
+                                "city"
+                            )
+                            .value
+                            .trim(),
+
+                    province:
+                        document
+                            .getElementById(
+                                "province"
+                            )
+                            .value
+                            .trim(),
+
+                    postalCode:
+                        document
+                            .getElementById(
+                                "postalCode"
+                            )
+                            .value
+                            .trim(),
+
+                    choice1:
+                        getRadioValue(
+                            "choice_1"
+                        ),
+
+                    choice2:
+                        getRadioValue(
+                            "choice_2"
+                        ),
+
+                    choice3:
+                        getRadioValue(
+                            "choice_3"
+                        ),
+
+                    unavailableAction:
+                        getRadioValue(
+                            "unavailable_action"
+                        ),
+
+                    accessibility:
+                        document
+                            .getElementById(
+                                "accessibility"
+                            )
+                            .value
+                            .trim(),
+
+                    contactPermission:
+                        document
+                            .getElementById(
+                                "contactPermission"
+                            )
+                            .checked,
+
+                    attachedFileUrl:
+                        "",
+
+                    signatureUrl:
+                        "",
+
+                    submittedAt:
+                        new Date()
+                            .toISOString(),
+
+                    status:
+                        "Submitted",
+
+                    event:
+                        "One Of A Kind Spring Market 2027",
+
+                    eventDate:
+                        "April 1-4, 2027"
+
+                };
+
+
+                /* ============================================
+                   STEP 1
+                   SAVE APPLICATION
+                   ============================================ */
+
+                setStatus(
+                    "Saving application..."
+                );
+
+
+                console.log(
+                    "STEP 1: Saving application..."
+                );
+
+
+                const applicationId =
+                    await saveApplication(
+                        applicationData
+                    );
+
+
+                console.log(
+                    "STEP 1 COMPLETE:",
+                    applicationId
+                );
+
+
+                /* ============================================
+                   STEP 2
+                   BOOTH FILE
+                   ============================================ */
+
+                let fileUploadFailed =
+                    false;
+
+
+                if (
+                    fileInput.files &&
+                    fileInput.files.length > 0
+                ) {
+
+                    setStatus(
+                        "Application saved. Uploading booth display..."
+                    );
+
+
+                    const file =
+                        fileInput.files[0];
+
+
+                    const safeFileName =
+                        file.name.replace(
+                            /[^a-zA-Z0-9._-]/g,
+                            "_"
+                        );
+
+
+                    const filePath =
+                        "uploads/" +
+                        applicationId +
+                        "_" +
+                        timestamp +
+                        "_" +
+                        safeFileName;
+
+
+                    console.log(
+                        "STEP 2: Uploading booth file..."
+                    );
+
+
+                    try {
+
+                        const fileURL =
+                            await uploadUserFile(
+                                file,
+                                filePath
+                            );
+
+
+                        await updateApplication(
+                            applicationId,
+                            {
+                                attachedFileUrl:
+                                    fileURL
+                            }
+                        );
+
+
+                        console.log(
+                            "STEP 2 COMPLETE"
+                        );
+
+
+                    } catch (error) {
+
+                        fileUploadFailed =
+                            true;
+
+
+                        console.error(
+                            "BOOTH FILE UPLOAD FAILED:",
+                            error
+                        );
+
+                    }
+
+                }
+
+
+                /* ============================================
+                   STEP 3
+                   SIGNATURE
+                   ============================================ */
+
+                setStatus(
+                    "Uploading signature..."
+                );
+
+
+                console.log(
+                    "STEP 3: Preparing signature..."
+                );
+
+
+                const signatureBlob =
+                    await getSignatureBlob();
+
+
+                let signatureUploadFailed =
+                    false;
+
+
+                if (signatureBlob) {
+
+                    const signaturePath =
+                        "signatures/" +
+                        applicationId +
+                        "_" +
+                        timestamp +
+                        ".png";
+
+
+                    try {
+
+                        const signatureURL =
+                            await uploadUserFile(
+                                signatureBlob,
+                                signaturePath
+                            );
+
+
+                        await updateApplication(
+                            applicationId,
+                            {
+                                signatureUrl:
+                                    signatureURL
+                            }
+                        );
+
+
+                        console.log(
+                            "STEP 3 COMPLETE"
+                        );
+
+
+                    } catch (error) {
+
+                        signatureUploadFailed =
+                            true;
+
+
+                        console.error(
+                            "SIGNATURE UPLOAD FAILED:",
+                            error
+                        );
+
+                    }
+
+                }
+
+
+                /* ============================================
+                   FINAL RESULT
+                   ============================================ */
+
+                if (
+                    fileUploadFailed ||
+                    signatureUploadFailed
+                ) {
+
+                    setStatus(
+                        "Application saved, but one or more attachments could not be uploaded."
+                    );
+
+
+                    alert(
+                        "Your application was saved successfully.\n\n" +
+                        "Application ID: " +
+                        applicationId +
+                        "\n\n" +
+                        "However, one or more attachments could not be uploaded. Check the browser console for details."
+                    );
+
+                } else {
+
+                    setStatus(
+                        "Application submitted successfully!"
+                    );
+
+
+                    alert(
+                        "Application submitted successfully!\n\n" +
+                        "Application ID: " +
+                        applicationId
+                    );
+
+                }
+
+
+                /* ============================================
+                   RESET FORM
+                   ============================================ */
+
+                form.reset();
+
+
+                fileInput.value =
+                    "";
+
+
+                fileNameDisplay.textContent =
+                    "";
+
+
+                ctx.clearRect(
+                    0,
+                    0,
+                    canvas.width,
+                    canvas.height
+                );
+
+
+                signatureDrawn =
+                    false;
+
+
+                /* Checkbox needs to remain checked */
+
+                document
+                    .getElementById(
+                        "contactPermission"
+                    )
+                    .checked =
+                    true;
+
+
+                console.log(
+                    "========== FORM SUBMISSION FINISHED =========="
+                );
+
+
+            } catch (error) {
+
+                console.error(
+                    "========== SUBMISSION ERROR =========="
+                );
+
+
+                console.error(
+                    error
+                );
+
+
+                console.error(
+                    "ERROR CODE:",
+                    error.code
+                );
+
+
+                console.error(
+                    "ERROR MESSAGE:",
+                    error.message
+                );
+
+
+                setStatus(
+                    "Submission failed: " +
+                    error.message,
+                    true
+                );
+
+
+                alert(
+                    "Submission failed.\n\n" +
+                    error.message
+                );
+
+
+            } finally {
+
+                submitBtn.disabled =
+                    false;
+
+                submitBtn.textContent =
+                    "Submit Now";
+
+            }
+
+        }
+    );
+
+
+    /* ========================================================
+       SAVE AND RESUME LATER
+       ======================================================== */
+
+    const saveLaterBtn =
+        document.getElementById(
+            "save-later-btn"
+        );
+
+
+    saveLaterBtn.addEventListener(
+        "click",
+        function() {
+
+            alert(
+                "Save and Resume Later is not enabled yet. Please use Submit Now to send the application."
+            );
+
+        }
+    );
+
+
+    /* ========================================================
+       FIREBASE READY
+       ======================================================== */
+
+    console.log(
+        "OOAK application form is ready."
+    );
+
+</script>
+
+</body>
+</html>
